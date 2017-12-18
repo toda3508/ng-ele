@@ -1,0 +1,48 @@
+.Goodlist{
+    
+    ul{
+        li{
+            display: flex;
+            box-sizing: border-box;
+            padding-left:15px;
+            div:first-of-type{
+                flex:1;
+                img{
+                    width: 60px;
+                }
+            }
+            div:nth-of-type(2){
+                box-sizing: border-box;
+                padding-left:10px;
+                flex:5;
+                p{
+                    color:#93999f;
+                }
+                p:first-of-type{
+                    font-size:16px;
+                    color:#000;
+                }
+                p:last-of-type{
+                    color:red;
+                    font-weight: bold;
+                    font-size:16px;
+                }
+            }
+            div:nth-of-type(3){
+                box-sizing: border-box;
+                padding:23px 10px 0 0;
+                flex:1;
+                i{
+                    color: #00a0dc;
+                    font-size: 22px;
+                }
+                span{
+                    padding:0 5px;
+                    color:#93999f;
+                    font-size:16px;
+                    vertical-align:top;
+                }
+            }
+        }
+    }
+}

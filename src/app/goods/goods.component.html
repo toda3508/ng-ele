@@ -1,0 +1,17 @@
+<div class="goods">
+  <div class="Goods clearfix">
+    <div  class="leftNav" #menu>
+      <ul>
+        <li *ngFor="let nav of navData; let i=index" [ngClass]="{'current':flag == i}" (click)="lefTouch(i)">{{nav.name}}</li> 
+      </ul>
+    </div>
+    <div class="rightList" #foodsWrapper (touchstart)="cancelCli()" >
+      <div>
+        <div *ngFor="let goods of navData; let i=index" class="food-list-hook" >
+         {{goods.name}}
+         <app-goodlist [foods]="goods.foods"></app-goodlist>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

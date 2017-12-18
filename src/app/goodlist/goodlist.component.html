@@ -1,0 +1,24 @@
+<div class="Goodlist">
+    <ul>
+   
+        
+       
+            <li *ngFor="let goodlist of foods; let i=index">
+           
+                <div class="leftpic">
+                    <img src={{goodlist.image}} alt=""/>
+                </div>
+                <div class="middleCon">
+                    <p>{{goodlist.name}}</p>
+                    <p>{{goodlist.description}}</p>
+                    <p>月销量<i>{{goodlist.sellCount}}</i>好评率<i>{{goodlist.rating}}</i>%</p>
+                    <p>￥{{goodlist.price}}</p>
+                </div>
+                <div class="rightAdd">
+                  <!-- <Add price={{goodlist.price}}/> -->
+                </div>
+            </li>
+  
+    </ul>
+        
+    </div>
